@@ -2,7 +2,7 @@ package design;
 
 import java.util.Scanner;
 
-public class EmployeeInfo {
+public class EmployeeInfo extends NewEmployee implements Employee{
 
     /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
      * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
@@ -20,6 +20,9 @@ public class EmployeeInfo {
     /*
      * declare few static and final fields and some non-static fields
      */
+
+
+
     static String companyName;
 
     /*
@@ -37,6 +40,10 @@ public class EmployeeInfo {
     }
 
     public EmployeeInfo(String name, int employeeId) {
+
+    }
+
+    public EmployeeInfo() {
 
     }
 
@@ -75,6 +82,56 @@ public class EmployeeInfo {
 
         return total;
     }
+
+    @Override
+    public int employeeId() {
+        System.out.println("Employee----employeeId");
+        return 0;
+    }
+
+    @Override
+    public String employeeName() {
+        System.out.println("Employee---employeeName");
+        return null;
+    }
+
+    @Override
+    public void assignDepartment() {
+        System.out.println("Employee----assignDepartment");
+
+    }
+
+    @Override
+    public int calculateSalary() {
+        System.out.println("Employee----calculateSalary");
+        return 0;
+    }
+
+    @Override
+    public void benefitLayout() {
+        System.out.println("Employee----benefitLayout");
+
+
+    }
+
+    @Override
+    public int ssn() {
+        System.out.println("NewEmployee---ssn");
+        return 0;
+    }
+
+    @Override
+    public void joiningDate() {
+        System.out.println("NewEmployee---joiningDate");
+
+    }
+
+    @Override
+    public void CalculatePensionBenefit() {
+        System.out.println("NewEmployee----calculatePensionBenefit");
+
+    }
+
 
     private static class DateConversion {
 

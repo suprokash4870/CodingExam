@@ -23,4 +23,13 @@ public interface Employee {
     //employee benefit
     public void benefitLayout();
 
+    //employee SSN
+    public int ssn();
+
+    //employee date of joining
+    public void joiningDate();
+
+
+
+
 }
